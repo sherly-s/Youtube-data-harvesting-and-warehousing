@@ -1680,7 +1680,7 @@ if option:
             if s1 == []:
                 st.info("The SQL database is currently empty")
             else:
-                gopi_s = pymysql.connect(
+                she_s = pymysql.connect(
                             host='localhost',
                             port=3307,
                             user='root',
@@ -1688,7 +1688,7 @@ if option:
                             database='y_tb'
                         )
 
-                cursor = gopi_s.cursor()
+                cursor = she_s.cursor()
                 cursor.execute('select channel_name from channel order by channel_name ASC')
                 s = cursor.fetchall()
                 list_channel = ['Over All']
